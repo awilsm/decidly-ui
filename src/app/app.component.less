@@ -1,0 +1,38 @@
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
+
+.container {
+  width: 50%;
+
+  margin: auto;
+  padding: 20px;
+
+  :host-context(tui-root._mobile) & {
+      flex-direction: column;
+  }
+}
+
+button {
+  width: 100%;
+}
+
+.card-container {
+  width: 75%;
+  margin: auto;
+
+  .inner-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+tui-input + tui-input {
+  margin-top: 1rem;
+}
+
+.card {
+  background-color: var(--tui-base-02);
+  height: auto;
+  width: 50%;
+  display: inline-flex;
+}
